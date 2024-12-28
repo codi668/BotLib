@@ -1,12 +1,6 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include <Arduino.h>
-#include <ArduinoJson.h>
-#include <BluetoothSerial.h>
-#include <FastLED.h>
-#include <Wire.h>
-
 // Motor pins:
 #define MOTO_R_GESCHW 2
 #define MOTO_L_GESCHW 32
@@ -32,5 +26,6 @@ extern float V; // Spannungsteiler Verhältnis
 extern float ADC_rate;             // Successive-approximation ADC mit 12 Bit
 
 extern float BatteryLevel();
+extern void setupBot();
 
 #endif // ROBTO_H
